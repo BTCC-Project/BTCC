@@ -1,4 +1,5 @@
 // Copyright (c) 2011-2020 The Bitcoin Core developers
+// Copyright (c) 2022-2025 The Bitcoin Сharity Core Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 

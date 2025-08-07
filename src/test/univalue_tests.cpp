@@ -1,5 +1,6 @@
 // Copyright 2014 BitPay, Inc.
-// Copyright (c) 2017-2019 The PIVX Core developers
+// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2022-2025 The Bitcoin Сharity Core Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 

@@ -1,5 +1,6 @@
 // Copyright (c) 2012-2017 The Bitcoin Core developers
-// Copyright (c) 2016-2021 The PIVX Core developers
+// Copyright (c) 2016-2019 The PIVX developers
+// Copyright (c) 2022-2025 The Bitcoin Сharity Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,10 +11,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both pivxd and pivx-qt, to make it harder for attackers to
+ * for both btccd and btcc-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME(PACKAGE_NAME);
+const std::string CLIENT_NAME("BTCc Core");
 
 /**
  * Client version number
@@ -67,7 +68,16 @@ const std::string CLIENT_NAME(PACKAGE_NAME);
 #endif
 #endif
 
+#ifndef BUILD_DATE
+#ifdef GIT_COMMIT_DATE
+#define BUILD_DATE GIT_COMMIT_DATE
+#else
+#define BUILD_DATE __DATE__ ", " __TIME__
+#endif
+#endif
+
 const std::string CLIENT_BUILD(BUILD_DESC CLIENT_VERSION_SUFFIX);
+const std::string CLIENT_DATE(BUILD_DATE);
 
 static std::string FormatVersion(int nVersion)
 {

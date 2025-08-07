@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=BTCc 
+Comment=BTCc P2P Cryptocurrency
+Comment[fr]=BTCc, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BTCc, eşten eşe kriptografik sanal para birimi
+Exec=btcc-qt %u
+Terminal=false
+Type=Application
+Icon=pivx128
+MimeType=x-scheme-handler/btcc;
+Categories=Office;Finance;
+StartupWMClass=btcc-qt
